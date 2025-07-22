@@ -41,7 +41,7 @@ class Extracao:
         if not self.soup:
             return 
                 
-        print(f'Última atualização local: {datetime.now().strftime("%Y-%m-%d %H:%M")}', flush=True)
+        print(f'Última atualização local: {datetime.now().strftime("%d/%m/%Y %H:%M")}', flush=True)
         print("-" * 50, flush=True)
 
         novas = self.novas_noticias()

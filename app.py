@@ -1,4 +1,4 @@
-from Modelos.instituicoes import MME_extracao, ANEEL_extracao, EPE_extracao
+from Modelos.instituicoes import MME_extracao, ANEEL_extracao, EPE_extracao, ANP_extracao
 
 
 def main():
@@ -13,6 +13,12 @@ def main():
     print('')
     site_aneel = ANEEL_extracao()
     site_aneel.listar_noticias()
+
+    print('')
+    print('NOTÍCIAS DA AGÊNCIA NACIONAL DO PETRÓLEO, GÁS NATURAL E BIOCMBUSTÍVEIS - ANP')
+    print('')
+    site_anp = ANP_extracao()
+    site_anp.listar_noticias()
 
     print('')
     print('NOTÍCIAS DA EMPRESA DE PESQUISA ENERGÉTICA - EPE')
