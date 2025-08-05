@@ -1,5 +1,5 @@
-# Extração de notícias do Setor Energético Brasileiro
-> :construction: Projeto em construção :construction: : Extrações ONS e CEEE ainda não foram implementadas.
+## Regulatório de energia
+> :construction: Projeto em construção :construction: : Extração ONS ainda não foi implementada.
 ---
 ## Descrição 
 
@@ -17,9 +17,13 @@ O objetivo é facilitar o monitoramento e a coleta de informações relevantes d
 
 ## Organização do projeto
 ```sh
+app.py: extrai últimas 10 notícias por instituição, nos últimos 7 dias
+app_v1.py: extrai últimas 5 notícias por instituição
+
 regulatorioenergia/
 
 ├── app.py             # script principal
+├── app_v1.py          # script alternativo 
 ├── requirements.txt   # bibliotecas necessárias
 ├── README.md          # este arquivo
 ├── Modelos
