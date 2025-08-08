@@ -154,3 +154,4 @@ class CCEE_extracao(Extracao):
                 })
         return grupo_de_noticias
     
+

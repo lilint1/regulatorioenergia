@@ -1,3 +1,4 @@
+import locale
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date, timedelta
@@ -26,16 +27,16 @@ class Extracao:
         raise NotImplementedError("O método novas noticias deve ser implementado nas subclasses.")
     
     def formatacao_datas(self, data_str):
-        """
-        Converte a string data para um objeto date
-        """
-        try: #para DD/MM/AAAA
-            return datetime.strptime(data_str, "%d/%m/%Y").date() 
-        except ValueError:
-            try: #para DD/MM/AA
-                return datetime.strptime(data_str, "%d/%m/%y").date()
+            """
+            Converte a string data para um objeto date
+            """
+            try: #para DD/MM/AAAA
+                return datetime.strptime(data_str, "%d/%m/%Y").date() 
             except ValueError:
-                return None
+                try: #para DD/MM/AA
+                    return datetime.strptime(data_str, "%d/%m/%y").date()
+                except ValueError:
+                    return None
 
     def noticias_ultimos_dias(self):
         """
