@@ -3,9 +3,20 @@
 ---
 ## Descrição 
 
-Este projeto consiste em um script Python para extrair automaticamente as últimas notícias dos principais órgãos do setor energético brasileiro. 
-O objetivo é facilitar o monitoramento e a coleta de informações relevantes das fontes: MME, ANEEL, ANP, EPE, ONS e CCEE.
+Problemática & objetivo: Este projeto visa evitar o trabalho manual de visitar diversos sites do setor energético brasileiro para buscar notícias. O objetivo é automatizar o monitoramento e a coleta de informações relevantes do setor. 
 
+Escopo:
+1. Informações coletadas: 
+- Título
+- Data de publicação
+- Link para a notícia 
+2. Critérios de seleção:
+-  São considerados apenas publicações dos últimos 7 dias.
+-  São coletadas até 10 notícias por fonte.
+3. Fontes de informação:
+   Dados públicos extraídos dos sites oficiais. As fontes: MME, ANEEL, ANP, EPE, ONS e CCEE.
+   
+4. Saída do script: As notícias são exibidas diretamente no terminal, organizadas por data e, dentro de cada data, por fonte, contendo o título e o link de cada notícia.
 ---
 ## Tecnologias utilizadas
 
