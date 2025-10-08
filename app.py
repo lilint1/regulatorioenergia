@@ -11,7 +11,7 @@ def main():
     extratores = [
         {'orgao': 'MME', 'extrator': MME_extracao()},
         {'orgao': 'ANEEL', 'extrator': ANEEL_extracao()},
-        {'orgao': 'EPE', 'extrator': EPE_extracao()},
+  #      {'orgao': 'EPE', 'extrator': EPE_extracao()},
         {'orgao': 'ANP', 'extrator': ANP_extracao()},
         {'orgao': 'CCEE', 'extrator': CCEE_extracao()}
        # {'orgao': 'ONS', 'extrator': ONS_extracao()}
