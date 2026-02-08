@@ -1,31 +1,24 @@
 ## Regulatório de energia
-> :construction: Projeto em construção :construction: : Extração ONS ainda não foi implementada.
----
+⚠️ Projeto em desenvolvimento – extração do ONS ainda não implementada
+
 ## Descrição 
 
-Problemática & objetivo: Este projeto visa evitar o trabalho manual de visitar diversos sites do setor energético brasileiro para buscar notícias. O objetivo é automatizar o monitoramento e a coleta de informações relevantes do setor. 
+Objetivo: Extrair informações relevantes de órgãos reguladores e operadores, organizando-as por data e fonte.
 
-Escopo:
-1. Informações coletadas: 
-- Título
-- Data de publicação
-- Link para a notícia 
-2. Critérios de seleção:
--  São considerados apenas publicações dos últimos 7 dias.
--  São coletadas até 10 notícias por fonte.
-3. Fontes de informação:
-   Dados públicos extraídos dos sites oficiais. As fontes: MME, ANEEL, ANP, EPE, ONS e CCEE.
-   
-4. Saída do script: As notícias são exibidas diretamente no terminal, organizadas por data e, dentro de cada data, por fonte, contendo o título e o link de cada notícia.
----
+Problema: Atualmente, a busca manual é lenta e propensa a erros. Este projeto centraliza as informações e prepara para futuras análises.
+
+## Escopo:
+- Informações coletadas: título, data, link da notícia.  
+- Limite: até 10 notícias por fonte.  
+- Filtra apenas publicações dos últimos 7 dias.  
+- Fontes: MME, ANEEL, ANP, EPE, ONS e CCEE.  
+- Saída: notícias exibidas no terminal organizadas por data e fonte.
+
 ## Tecnologias utilizadas
 
-* Python 3.13: Linguagem de programação principal.
-* BeautifulSoup4: Extração de dados de páginas web.
-* Requests: Requisições HTTP e obter o conteúdo das páginas.
-* datetime: Manipulação de datas e horas.
----
-
+* Principais: Python 3.13; Requests; BeautifulSoup4
+* Auxiliares: datetime
+  
 ## Organização do projeto
 ```sh
 app.py: extrai últimas 10 notícias por instituição, nos últimos 7 dias
